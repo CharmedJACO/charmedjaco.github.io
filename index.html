@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<title>You've Been Charmed!</title>
+<title>You've Been Charmed</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
@@ -28,7 +28,7 @@ body, html {
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Profile) */
 .bgimg-2 {
   background-image: url('Parallax/Products.jpg');
   min-height: 400px;
@@ -45,7 +45,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+   .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
   }
@@ -59,10 +59,13 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button"> HOME</a>
+    <a href="#home" class="w3-bar-item4 w3-button"><img src="Logo.png" alt="Logo" style="width:40px;height:40px"> HOME </a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT US</a>
     <a href="#products" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a class="w3-bar-item2 w3-hide-small">FOLLOW US :</a>
+    <a href="https://www.facebook.com/Charmed.JACO/" target="_blank" style="padding:0px;"><i class="fa fa-facebook-official w3-hover-opacity w3-hide-small w3-bar-item2" style="font-size: 1.8em"></i></a>
+    <a href="https://www.instagram.com/charmed_ja/" target="_blank" style="padding:0px;"><i class="fa fa-instagram w3-hover-opacity w3-hide-small w3-bar-item2" style="font-size: 1.8em"></i></a>
     </a>
   </div>
 
@@ -71,6 +74,10 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
     <a href="#products" class="w3-bar-item w3-button" onclick="toggleFunction()">PRODUCTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT US</a>
+    <hr class="w3-bar-item3" width="75%" noshade="noshade" align="left" size="50">
+    <a class="w3-bar-item"> FOLLOW US 
+    <a href="https://www.facebook.com/Charmed.JACO/" target="_blank" style="padding:16px 16px;"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 2.5em"></i></a>
+    <a href="https://www.instagram.com/charmed_ja/" target="_blank" style="padding:16px 0px;"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 2.5em"></i></a></a>
   </div>
 </div>
 
@@ -85,7 +92,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">ABOUT US</h2>
   <h4 class="w3-center"><em>Captivate Your Spark</em></h4>
-  <h5>“We aspire to provide ethical and locally developed products while expressing individuality that is as unique as our customers. Our passion to ignite self-empowerment furthers our goal of building a more compassionate community.” <br>- Charmed JACO
+  <h5 class="w3-center">“We aspire to provide ethical and locally developed products while expressing individuality that is as unique as our customers. Our passion to ignite self-empowerment furthers our goal of building a more compassionate community.” <br>- Charmed JACO
   </h5>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
@@ -95,7 +102,7 @@ body, html {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-padding-large">
-      <h5>Welcome to our website! Charmed is a student-run company created as a part of the Junior Achievement Central Ontario Company Program. Our company creates handcrafted pendants and keychains with unique and beautiful designs that evoke the charm within our customers. The materials used include metal bezels, non-toxic resin, and various decorative pieces. To ensure quality of our product and to provide the best customer experience, each charm passes through a rigorous quality control process prior to being packaged.</h5>
+      <h5>Welcome to our website! Charmed is a student-run company formed as a part of the Junior Achievement Central Ontario program. Our company creates handcrafted pendants and keychains with unique and beautiful designs that evoke the charm within our customers. The materials used include metal bezels, non-toxic resin, and various decorative pieces. To ensure quality of our product and to provide the best customer experience, each charm passes through a rigorous quality control process prior to being packaged.</h5>
     </div>
   </div>
   <p class="w3-xlarge w3-center w3-padding-16"> Our Departments</p>
@@ -163,14 +170,14 @@ body, html {
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Products Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-dark-grey w3-wide">PRODUCTS</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (Products Section) -->
 <div class="w3-content w3-container w3-padding-64" id="products">
   <h3 class="w3-center">OUR PRODUCTS</h3>
   <p class="w3-center"><em>Here are some of our stunning new products<br> Click on the images to enlarge</em></p><br>
@@ -222,7 +229,7 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Third Parallax Image with Products Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-dark-grey w3-wide">CONTACT US</span>
@@ -241,7 +248,7 @@ body, html {
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Toronto, CA<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: charmedjaco@gmail.com <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:charmedjaco@gmail.com">charmedjaco@gmail.com</a><br>
       </div>
       <form action="mailto:charmedjaco@gmail.com" method="post" enctype="text/plain">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -253,6 +260,7 @@ body, html {
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <h4 class="w3-section w3-left"> Not Availible On Mobile! </h4>
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
@@ -265,7 +273,7 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/CharmedJewelry.JACO/" target="_blank" style="padding:10px;"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 1.5em"></i></a>
+    <a href="https://www.facebook.com/Charmed.JACO/" target="_blank" style="padding:10px;"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 1.5em"></i></a>
     <a href="https://www.instagram.com/charmed_ja/" target="_blank" style="padding:10px;"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 1.5em"></i></a>
   </div>
 </footer>
