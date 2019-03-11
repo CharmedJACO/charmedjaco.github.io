@@ -49,8 +49,8 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-   .bgimg-2, .bgimg-3, .bgimg-4 {
+@media only screen and (max-device-width: 1800px) {
+   .bgimg-2, .bgimg-3, .bgimg-4, .myNavbar, {
     background-attachment: scroll;
     min-height: 400px;
   }
@@ -104,7 +104,6 @@ body, html {
   </h5>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Our Company</b></p><br>
       <img src="JALogo.png" class="w3-round w3-image w3-hover-opacity-off" alt="Company Logo" width="500" height="333">
     </div>
 
@@ -113,48 +112,23 @@ body, html {
       <h5>Welcome to our website! Charmed is a student-run company formed as a part of the Junior Achievement Central Ontario program. Our company creates handcrafted pendants and keychains with unique and beautiful designs that evoke the charm within our customers. The materials used include metal bezels, non-toxic resin, and various decorative pieces. To ensure quality of our product and to provide the best customer experience, each charm passes through a rigorous quality control process prior to being packaged.</h5>
     </div>
   </div>
-  <p class="w3-xlarge w3-center w3-padding-16"> Our Departments</p>
+  <div class="w3-row">
+  	<div class="w3-col m7 w3-center w3-padding-large">
+  	<h3 class="w3-left-align">Charmed is also committed to making a difference as a proud partner of SickKids. For every pendent sold, Charmed will donate the profits from the sales to SickKids because we believe a  brighter future starts today.</h3>
+  </div>
+  <div class="w3-col m5 w3-center w3-padding-large">
+  <p><b><i class="fa fa-user w3-margin-right"></i>Letter to Customers from SickKids</b></p>
+  <img src="Letter.JPG" style="width:40%" onclick="onClick(this)" class="w3-hover-opacity" alt="Letter to Customers from SickKids">
+  </div>
+ </div>
+  <p class="w3-xlarge w3-center w3-padding-16"> Our Company</p>
   <div class="w3-row-padding w3-center">
-      <h5>Presidents</h5>
-      <img src="Products/Box.jpeg" style="width:30%" onclick="onClick(this)" class="w3-hover-opacity" alt="Presidents">
+      <img src="Departments/Company.jpeg" style="width:90%" onclick="onClick(this)" class="w3-hover-opacity" alt="Company">
   </div>
- <div class="w3-row-padding w3-center">
-    <div class="w3-col s4">
-      <h5>Production Department</h5>
-      <img src="Products/Clover.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Production Department">
-    </div>
-
-    <div class="w3-col s4">
-      <h5>IT Department</h5>
-      <img src="Products/Heart.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="IT Department">
-    </div>
-
-    <div class="w3-col s4">
-      <h5>Marketing Department</h5>
-      <img src="Departments/Marketing.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marketing Department">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col s4">
-      <h5>CSR Department</h5>
-      <img src="Departments/CSR.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CSR Department">
-    </div>
-
-    <div class="w3-col s4">
-      <h5>Sales Department</h5>
-      <img src="Departments/Sales.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales Department">
-    </div>
-
-    <div class="w3-col s4">
-      <h5>HR Department</h5>
-      <img src="Products/Moon.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="HR Department">
-    </div>
-  </div>
+  <h4 class="w3-center">Secret Santa Photo :)</h4>
 </div>
-
-
 <!-- Second Parallax Image with Products Text -->
+
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-dark-grey w3-wide">PRODUCTS</span>
@@ -169,6 +143,14 @@ body, html {
   <p class="w3-center"><em>Here are some of our stunning new products<br> Click on the images to enlarge<br>Each Product is $7 Each!</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+   <div class="img_wrap container" align="middle" style="width:100%">
+      <img src="Products/RectangleNew.jpeg" style="width:100%" onclick="onClick(this)" class="image w3-hover-opacity" alt="Rectangle With Fruits">
+      <div class = "middle" style="width:100%" >
+        <div class="text">Rectangle With Fruits</div>
+    </div>
+  </div>
+  <br>
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3 img_wrap container">
       <img src="Products/Box.jpeg" style="width:100%" onclick="onClick(this)" class="image w3-hover-opacity" alt="Box with Fruits">
@@ -222,14 +204,15 @@ body, html {
     </div>
 
     <div class="w3-col m3 img_wrap container">
-      <img src="Products/Moon.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Moon">
+      <img src="Products/Umbrella.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Umbrella">
       <div class ="middle">
-        <div class="text">Moon</div>
+        <div class="text">Umbrella</div>
       </div>
     </div>
   </div>
   <h3 class="w3-center">Where to Buy?</h3>
-  <p class="w3-center"><em>Contact us through social media or via email to make purchases!</em></p><br>
+  <p class="w3-center"><em>Contact us through social media or via email to make purchases!</em></p>
+</div>
 </div>
 <!-- Slideshow -->
 <!-- Slideshow container -->
@@ -238,20 +221,37 @@ body, html {
      <span class="w3-xxlarge w3-text-dark-grey w3-wide">RECENT NEWS</span>
   </div>
 </div>
-<div class="w3-content w3-container w3-padding-64" id="Recent">
-<h3 class="w3-center">Rob Kochel from Invesco Visits Charmed!</h3>
-<div class="slideshow-container">
+<div class="w3-content w3-container w3-padding-32" id="Recent">
+<h3 class="w3-center">Some recent events starring Charmed!</h3>
+<h4 class="w3-center">Click for more info</h4>
+</div>
 <div class="w3-content">
-  <img class="mySlides" src="Departments/Working.jpg" style="width:100%;display:none">
-  <img class="mySlides" src="Departments/Event1.jpg" style="width:100%">
-  <img class="mySlides" src="Departments/Rob.jpg" style="width:100%;display:none">
-
+<div class="slideshow-container">
+  <div class="img_wrap container mySlides" style="display:none">
+  <img src="Departments/Working.jpg" style="width:100%">
+  <div class ="middle">
+  <div class="text">Rob Kochel from Invesco Visits Charmed!</div>
+  </div>
+  </div>
+ </div>
+  <div class="img_wrap container mySlides" style="display:none">
+  <img src="Departments/Jane.jpeg" style="width:100%">
+  <div class ="middle">
+  <div class="text">Jane Eisbrenner - President and CEO of JA Central Ontario Visits Charmed!</div>
+  </div>
+  </div>
+  <div class="img_wrap container mySlides" style="display:none">
+  <img src="Departments/Rob.jpg" style="width:100%">
+  <div class ="middle">
+  <div class="text">Rob Kochel and Charmed!</div>
+  </div>
+  </div>
   <div class="w3-row-padding w3-section">
     <div class="w3-col s4">
       <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Working.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
     </div>
     <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Event1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Jane.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
     </div>
     <div class="w3-col s4">
       <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Rob.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
@@ -282,7 +282,6 @@ function showDivs(n) {
 </script>
 
 </div>
-</div>
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -305,7 +304,7 @@ function showDivs(n) {
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container w3-center">
-      <img src="Toronto.jpg" class="w3-image w3-round" style="width:100%">
+      <img src="Toronto.jpeg" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
@@ -332,12 +331,14 @@ function showDivs(n) {
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-32 w3-hover-opacity-off">
+	<br>
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/Charmed.JACO/" target="_blank" style="padding:10px;"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 1.5em"></i></a>
     <a href="https://www.instagram.com/charmed_ja/" target="_blank" style="padding:10px;"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 1.5em"></i></a>
   </div>
+  <a href="https://www.jacentralontario.org/"><img align="w3-right" style= "width:30%" src="JALOGO2.png"></a>
 </footer>
  
 <script>
