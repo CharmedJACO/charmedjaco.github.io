@@ -1,17 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <title>Captivate Your Spark</title>
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136329658-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-136329658-1');
-</script>
-<link rel="shortcut icon" type="image/x-icon" href="Icon.png" /></head>
+<head><link rel="shortcut icon" type="image/x-icon" href="Icon.png" /></head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
@@ -231,6 +221,7 @@ body, html {
      <span class="w3-xxlarge w3-text-dark-grey w3-wide">RECENT NEWS</span>
   </div>
 </div>
+
 <div class="w3-content w3-container w3-padding-32" id="Recent">
 <h3 class="w3-center">Some recent events starring Charmed!</h3>
 <h4 class="w3-center">Click to enlarge</h4>
@@ -238,10 +229,12 @@ body, html {
 <div class="w3-content">
 <div class="slideshow-container">
   <div class="img_wrap container mySlides" style="display:none">
-  <img src="Departments/Rob2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rob Kochel from Invesco Visits Charmed!">
-  <div class ="middle">
-  <div class="text">Rob Kochel from Invesco Visits Charmed!</div>
-  </div>
+<div class="w3-content w3-container w3-padding-32">
+<h3 class="w3-center">Our Product Ad!</h3>
+<video width="1280" height="720" controls style="width: 100%; height:100%">
+  <source src="Ad.mp4" type="video/mp4">	
+</video>
+</div>
   </div>
   <div class="img_wrap container mySlides" style="display:none">
   <img src="Departments/Jane.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jane Eisbrenner - President and CEO of JA Central Ontario Visits Charmed!">
@@ -256,9 +249,9 @@ body, html {
   </div>
   </div>
   <div class="img_wrap container mySlides" style="display:none">
-  <img src="Departments/Working.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Charmed in Action!">
+  <img src="Departments/Rob2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rob Kochel from Invesco Visits Charmed!">
   <div class ="middle">
-  <div class="text">Charmed in Action!</div>
+  <div class="text">Rob Kochel from Invesco Visits Charmed!</div>
   </div>
   </div>
    <div class="img_wrap container mySlides" style="display:none">
@@ -275,7 +268,7 @@ body, html {
   </div>
   <div class="w3-row-padding w3-section">
     <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Rob2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Ad.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
     </div>
     <div class="w3-col s4">
       <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Jane.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
@@ -286,7 +279,7 @@ body, html {
      </div>
   <div class="w3-row-padding w3-section">
     <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Working.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Rob2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
      </div>
     <div class="w3-col s4">
       <img class="demo w3-opacity w3-hover-opacity-off" src="Departments/Dinner.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
@@ -330,7 +323,6 @@ function showDivs(n) {
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
-
 <!-- Third Parallax Image with Products Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
